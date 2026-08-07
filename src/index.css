@@ -189,8 +189,8 @@ body {
   background: #0a0a0a;
   border: 1px solid #d4af37;
   border-radius: 0;
-  width: 50px;
-  height: 50px;
+  width: 25px;
+  height: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -205,8 +205,8 @@ body {
 }
 
 .play-btn {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   font-size: 1.5rem;
   background: #d4af37;
   color: #000000;
@@ -399,7 +399,7 @@ body {
 
 .nav-link:hover {
   color: #000000;
-  background: #d4af37;
+  background: #c9c0a4;
 }
 
 .nav-link.active {

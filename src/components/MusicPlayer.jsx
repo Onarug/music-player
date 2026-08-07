@@ -126,11 +126,11 @@ export const MusicPlayer = () => {
                     {formatTime(duration)}
                 </span>
                 <div className="controls">
-                    <button className="control-btn" onClick={prevTrack}>↺</button>
+                    <button className="control-btn" onClick={prevTrack}>⏮</button>
                     <button className="control-btn play-btn" onClick={() => isPlaying ? pause() : play()}>
                         {isPlaying ? "⏸" : "▶"}
                     </button>
-                    <button className="control-btn" onClick={nextTrack}>▹▹</button>
+                    <button className="control-btn" onClick={nextTrack}>⏩︎ </button>
 
                 </div>
                 <div className="volume-container">

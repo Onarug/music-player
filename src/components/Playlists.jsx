@@ -44,7 +44,7 @@ export const Playlists = () => {
     }
 
     const deletePlaylistConfirmation = (playlist) => {
-        if(window.confirm(`Are you sure you want to delete${playlist.name}`)){
+        if(window.confirm(`Are you sure you want to delete ${playlist.name}`)){
             deletePlaylist(playlist.id);
         }
     }
@@ -92,7 +92,7 @@ export const Playlists = () => {
                             />
                             {selectedPlaylist?.id === playlist.id && showDropdown && 
                             (<div className="song-dropdown">
-                                {filteredSongs.length === 0 ? (<div className="dropdown-item no-results">No SOngs Found</div>) :
+                                {filteredSongs.length === 0 ? (<div className="dropdown-item no-results">No Songs Found</div>) :
                                 (filteredSongs.slice(0,5).map((song,key) => 
                                     <div key={key} className="dropdown-item" onClick={() => handleAddSong(song)}>
                                         <span className="song-title">{song.title}</span>
