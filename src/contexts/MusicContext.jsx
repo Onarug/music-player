@@ -49,9 +49,9 @@ export const MusicProvider = ({children}) => {
           const savedPlaylists = localStorage.getItem("musicPlayerPlaylists") 
           if( savedPlaylists){
             const playlists = JSON.parse(savedPlaylists);
-            setPlaylists(savedPlaylists);
+            setPlaylists(playlists);
           }
-        })
+        },[]);
     
         useEffect(() => {
             if(playlists.length > 0){
